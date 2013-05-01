@@ -13,7 +13,7 @@ if soup.title.string == 'Errors':
     print "Sorry. Trip id doesn't exist."
 else:
     print "Title: " + soup.find_all(class_="trip-name")[0].string
-    print "Travel Agent:" + soup.find_all(class_="view-visitor-block")[0].contents[1].string
+    print "Travel Agent: " + soup.find_all(class_="view-visitor-block")[0].contents[1].string
     places = []
     content = soup.find_all("ul", id="my-list")[0]
     for child in content.findChildren():
