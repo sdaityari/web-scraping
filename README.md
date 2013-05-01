@@ -10,7 +10,9 @@ Yet another thing I came up with because I was lazy! Here's how to run it.
 ###Clone the repository:
 >git clone https://github.com/sdaityari/web-scraping
 
-#####tripoto.py- Prints out trip information about a trip in tripoto. Takes in trip id as input.
+##Tools
+#####tripoto.py
+Prints out trip information about a trip in tripoto. Takes in trip id as input.
 
 >azure@ubuntu:~/web-scraping$ python tripoto.py  
 >Enter trip id: 273  
