@@ -3,20 +3,35 @@
 from bs4 import BeautifulSoup
 from urllib import urlopen
 
-trip_id = raw_input("Enter trip id: ")
+class TripotoTrip():
+    
+    def __init__(self, trip_id):
+        print "Getting webpage..."
+        self.webpage = urlopen('http://tripoto.com/trips/view/'+trip_id).read()
+        self.soup = BeautifulSoup(self.webpage)
+    
+    def check_errors(self):
+        if self.soup.title.string == 'Errors' :
+            return True
+        else :
+            return False
+    
+    def __str__(self):
+        soup = self.soup
+        string = "Title: " + soup.find_all(class_="trip-name")[0].string + "\n"
+        string += "Travel Agent: " + soup.find_all(class_="view-visitor-block")[0].contents[1].string + "\n"
+        places = []
+        content = soup.find_all("ul", id="my-list")[0]
+        for child in content.findChildren():
+            if child.a:
+                places.append(child.a.get("title"))
+        string += "Places: " + ", ".join(places)
+        return string
 
-print "Getting webpage..."
-webpage = urlopen('http://tripoto.com/trips/view/'+trip_id).read()
-soup = BeautifulSoup(webpage)
-
-if soup.title.string == 'Errors':
-    print "Sorry. Trip id doesn't exist."
-else:
-    print "Title: " + soup.find_all(class_="trip-name")[0].string
-    print "Travel Agent: " + soup.find_all(class_="view-visitor-block")[0].contents[1].string
-    places = []
-    content = soup.find_all("ul", id="my-list")[0]
-    for child in content.findChildren():
-        if child.a:
-            places.append(child.a.get("title"))
-    print "Places: " + ", ".join(places) 
+if __name__ == '__main__':
+    trip_id = raw_input("Enter trip id: ")
+    trip = TripotoTrip(trip_id)
+    if trip.check_errors():
+        print "Sorry. Trip id doesn't exist."
+    else:
+        print (trip)
