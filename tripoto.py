@@ -18,10 +18,10 @@ class TripotoTrip():
     
     def __str__(self):
         soup = self.soup
-        string = "Title: " + soup.find_all(class_="trip-name")[0].string + "\n"
-        string += "Travel Agent: " + soup.find_all(class_="view-visitor-block")[0].contents[1].string + "\n"
+        string = "Title: " + soup.find(class_="trip-name").string + "\n"
+        string += "Travel Agent: " + soup.find(class_="view-visitor-block").contents[1].string + "\n"
         places = []
-        content = soup.find_all("ul", id="my-list")[0]
+        content = soup.find("ul", id="my-list")
         for child in content.findChildren():
             if child.a:
                 places.append(child.a.get("title"))
