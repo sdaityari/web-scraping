@@ -24,7 +24,10 @@ class TripotoTrip():
         content = soup.find("ul", id="my-list")
         for child in content.findChildren():
             if child.a:
-                places.append(child.a.get("title"))
+                try:
+                    places.append(child.a.get("title").decode("utf-8"))
+                except:
+                    places.append(" ")
         string += "Places: " + ", ".join(places)
         return string
 
