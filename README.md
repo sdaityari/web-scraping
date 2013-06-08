@@ -12,14 +12,14 @@ Note: Do not use it for commercial purposes.
 >git clone https://github.com/sdaityari/web-scraping
 
 ##Tools
-#####tripoto.py
+#####trpt.py
 Prints out trip information about a trip in tripoto. Takes in trip id as input.
 
->azure@ubuntu:~/web-scraping$ python tripoto.py  
+>azure@ubuntu:~/web-scraping$ python trpt.py  
 >Enter trip id: 273  
 >Getting webpage...  
 >Title: The Handicraft Tour  
->Travel Agent:Royal Tours India  
+>Travel Agent: Royal Tours India  
 >Places: New Delhi, Agra, Jaipur, Jodhpur, Udaipur  
 
 #####bootsnall.py
