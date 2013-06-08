@@ -3,6 +3,10 @@
 from bs4 import BeautifulSoup
 from urllib import urlopen
 
+import sys    # sys.setdefaultencoding is cancelled by site.py
+reload(sys)    # to re-enable sys.setdefaultencoding()
+sys.setdefaultencoding('utf-8')
+
 class TripotoTrip():
     
     def __init__(self, trip_id):
@@ -25,7 +29,7 @@ class TripotoTrip():
         for child in content.findChildren():
             if child.a:
                 try:
-                    places.append(child.a.get("title").decode("utf-8"))
+                    places.append(child.a.get("title"))
                 except:
                     places.append(" ")
         string += "Places: " + ", ".join(places)
