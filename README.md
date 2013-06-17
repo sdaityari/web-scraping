@@ -27,3 +27,6 @@ Gets information about all world travelers from travelers.bootsnall.com and save
 
 #####fb_page_feed_check.php
 Run it in your web browser. Fill in the arrays of misleading words and terms to check for in the feed. Also put it the fb page id.
+
+#####indiblogger.py
+Gets the highest no of posts by any blogger in a given contest
