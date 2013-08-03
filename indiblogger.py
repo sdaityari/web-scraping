@@ -34,7 +34,7 @@ if __name__ == '__main__' :
     total = int(raw_input('Enter Total posts: '))
     pages = total // 10 + 1
     bloggers = dict()
-    for i in range(pages):
+    for i in xrange(pages):
         webpage = Indiblogger(i, topic, total)
         links = webpage.get_links()
         for link in links:
