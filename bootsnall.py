@@ -70,7 +70,7 @@ class ProfilePage():
 if __name__ == '__main__' :
     headers = ['Name', 'Title', 'Details', 'Links']
     details = []
-    for i in range(1,28):
+    for i in xrange(1,28):
         page = BootsnallPage(str(i))
         for link in page.get_profile_links():
             profile = ProfilePage(link)
