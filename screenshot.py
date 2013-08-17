@@ -1,3 +1,5 @@
+#Script source: http://stackoverflow.com/a/12031316 | http://webscraping.com/blog/Webpage-screenshots-with-webkit/
+
 import sys
 import time
 from PyQt4.QtCore import *
