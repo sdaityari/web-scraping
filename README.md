@@ -5,8 +5,13 @@ Note: Do not use it for commercial purposes.
 >sudo apt-get install python-bs4
 
 #####Alternate installation:
->sudo apt-get install python-pip   
+>sudo apt-get install python-pip  
 >sudo pip install beautifulsoup4
+
+#####Installing PyQt (For Screenshots)
+>pip install PyQt  
+In case you have isseus installing the package, visit this link-  
+>http://movingthelamppost.com/blog/html/2013/07/12/installing_pyqt____because_it_s_too_good_for_pip_or_easy_install_.html
 
 ###Clone the repository:
 >git clone https://github.com/sdaityari/web-scraping
@@ -20,7 +25,20 @@ Prints out trip information about a trip in tripoto. Takes in trip id as input.
 >Getting webpage...  
 >Title: The Handicraft Tour  
 >Travel Agent: Royal Tours India  
->Places: New Delhi, Agra, Jaipur, Jodhpur, Udaipur  
+>Places: New Delhi, Agra, Jaipur, Jodhpur, USORT
+
+Ishu Goyal voted on 7 answers on Quora.
+
+Is it proper to stare at a pretty girl?
+Quora
+Phoebe Gavin's answer: If you are going to stare, stare at my face. When I make eye contact with you, smile ge...
+Like · Comment
+
+What's the laziest thing you've ever done?
+Quora
+Shweta Raje's answer: This is something that I do every single day.
+Like · Comment
+daipur  
 
 #####bootsnall.py
 Gets information about all world travelers from travelers.bootsnall.com and saves it in an xls file!
