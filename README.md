@@ -25,20 +25,7 @@ Prints out trip information about a trip in tripoto. Takes in trip id as input.
 >Getting webpage...  
 >Title: The Handicraft Tour  
 >Travel Agent: Royal Tours India  
->Places: New Delhi, Agra, Jaipur, Jodhpur, USORT
-
-Ishu Goyal voted on 7 answers on Quora.
-
-Is it proper to stare at a pretty girl?
-Quora
-Phoebe Gavin's answer: If you are going to stare, stare at my face. When I make eye contact with you, smile ge...
-Like · Comment
-
-What's the laziest thing you've ever done?
-Quora
-Shweta Raje's answer: This is something that I do every single day.
-Like · Comment
-daipur  
+>Places: New Delhi, Agra, Jaipur, Jodhpur, Udaipur  
 
 #####bootsnall.py
 Gets information about all world travelers from travelers.bootsnall.com and saves it in an xls file!
