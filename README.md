@@ -17,7 +17,7 @@ In case you have isseus installing the package, visit this link-
 >git clone https://github.com/sdaityari/web-scraping
 
 ##Tools
-#####trpt.py
+#####trpt.py (Obsolete after the restructuring of their site)
 Prints out trip information about a trip in tripoto. Takes in trip id as input.
 
 >azure@ubuntu:~/web-scraping$ python trpt.py  
@@ -35,3 +35,6 @@ Run it in your web browser. Fill in the arrays of misleading words and terms to 
 
 #####indiblogger.py
 Gets the highest no of posts by any blogger in a given contest
+
+#####screenshot.py
+Takes screenshot of a given url
